@@ -110921,6 +110921,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -48.14787
       objectReference: {fileID: 0}
+    - target: {fileID: 4572303224226913442, guid: d542a7b34f9c64b44ba52a91b1a67d16, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572303224226913442, guid: d542a7b34f9c64b44ba52a91b1a67d16, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572303224889186728, guid: d542a7b34f9c64b44ba52a91b1a67d16, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4572303224889186732, guid: d542a7b34f9c64b44ba52a91b1a67d16, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572303224889186733, guid: d542a7b34f9c64b44ba52a91b1a67d16, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4572303224889186733, guid: d542a7b34f9c64b44ba52a91b1a67d16, type: 3}
       propertyPath: laserCollisionMask.m_Bits
       value: 8
@@ -111045,5 +111065,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medic bot
       objectReference: {fileID: 0}
+    - target: {fileID: 4572303225111147195, guid: d542a7b34f9c64b44ba52a91b1a67d16, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d542a7b34f9c64b44ba52a91b1a67d16, type: 3}
