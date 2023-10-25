@@ -29,6 +29,7 @@ public class SistemaDeDisparo : MonoBehaviour
     public TextMeshProUGUI textoUIRecargar;
     public TextMeshProUGUI textoUISinBalas;
 
+
     private int balasEnCartucho;
     private int cartuchos;
     private bool recargando = false;
@@ -89,6 +90,7 @@ public class SistemaDeDisparo : MonoBehaviour
                 advertenciaActiva = true;
                 StartCoroutine(ActivarAdvertencia());
             }
+            
         }
         if (CurasRestantes <= 0)
         {
@@ -103,9 +105,6 @@ public class SistemaDeDisparo : MonoBehaviour
         {
             StartCoroutine(Recargar());
         }
-
-
-
     }
 
     void disparar1()//Enemigo
