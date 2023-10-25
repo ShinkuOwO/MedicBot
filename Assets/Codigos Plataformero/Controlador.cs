@@ -1,26 +1,88 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Controlador : MonoBehaviour
 {
     public int enemiesToKill = 10;
     private int enemiesKilled = 0;
+    public GameObject victoryPanel;
+    public TextMeshProUGUI victoryText;
+    public TextMeshProUGUI additionalText;
+    public TextMeshProUGUI heroText; // Nuevo TextMeshProUGUI para mostrar "Eres un héroe"
+    public Slider slider; // Asocia tu Slider desde el Inspector
+
+    private bool isGamePaused = false;
+    private bool slidersEnabled = true;
+    private bool isGameOver = false;
+
     private void Start()
     {
-        // Puedes inicializar tu juego aquí
-
+        // Desactiva el panel, el TextMeshPro adicional y el nuevo mensaje al inicio del juego
+        victoryPanel.SetActive(false);
+        additionalText.gameObject.SetActive(false);
+        heroText.gameObject.SetActive(false);
     }
-    // Este método se llama cuando un enemigo es destruido
+
+    private void Update()
+    {
+        if (isGameOver && Input.GetKeyDown(KeyCode.Return))
+        {
+            // Código para pasar al siguiente nivel o realizar alguna acción al presionar Enter
+            // Por ejemplo, puedes cargar una nueva escena aquí.
+            Debug.Log("Presionaste Enter para pasar al siguiente nivel.");
+        }
+    }
+
     public void EnemyKilled()
     {
         enemiesKilled++;
 
-        // Verifica si se han matado a los 10 enemigos
         if (enemiesKilled >= enemiesToKill)
         {
-            // Muestra un mensaje de victoria en la consola
-            Debug.Log("¡Ganaste!");
+            // Pausa el juego
+            Time.timeScale = 0f;
+
+            // Muestra el cursor del mouse
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
+            // Muestra el panel de victoria
+            victoryPanel.SetActive(true);
+
+            // Cambia el texto del panel
+            victoryText.text = "¡Has vencido al virus gripe!";
+
+            // Activa el TextMeshPro adicional con el mensaje "Presiona Enter para pasar al siguiente nivel"
+            additionalText.gameObject.SetActive(true);
+            additionalText.text = "Presiona Enter para pasar al siguiente nivel";
+
+            // Activa el nuevo TextMeshPro con el mensaje "Eres un héroe"
+            heroText.gameObject.SetActive(true);
+            heroText.text = "Eres un héroe";
+
+            // Desactiva temporalmente la interacción de los Sliders
+            slidersEnabled = false;
+
+            isGameOver = true;
         }
+    }
+
+    public void ResumeGame()
+    {
+        // Oculta el cursor del mouse
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
+        // Desactiva el panel de victoria
+        victoryPanel.SetActive(false);
+
+        // Reactiva el juego
+        Time.timeScale = 1f;
+
+        // Vuelve a habilitar la interacción de los Sliders
+        slidersEnabled = true;
     }
 }
