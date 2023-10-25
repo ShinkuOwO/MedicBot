@@ -9,7 +9,7 @@ public class SistemaDeDisparo : MonoBehaviour
     public Slider sliderCuras; // Asigna el Slider en el Inspector
     public TextMeshProUGUI advertenciaText; // Asigna el TextMeshProUGUI en el Inspector
     public Image imagenParpadeante; // Asigna la imagen parpadeante en el Inspector
-    public int CurasRestantes = 10; // Número inicial de disparos disponibles
+    public int CurasRestantes = 30; // Número inicial de disparos disponibles
     private bool advertenciaActiva = false;
     private bool parpadeoActivo = false;
 

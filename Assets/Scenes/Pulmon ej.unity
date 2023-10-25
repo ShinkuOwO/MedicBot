@@ -128620,7 +128620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637820430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03974819, y: -1.73, z: -10}
+  m_LocalPosition: {x: 0.13124418, y: -1.73, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -135793,6 +135793,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1761915438}
     - target: {fileID: 4572303224150127117, guid: d542a7b34f9c64b44ba52a91b1a67d16, type: 3}
+      propertyPath: CurasRestantes
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572303224150127117, guid: d542a7b34f9c64b44ba52a91b1a67d16, type: 3}
       propertyPath: advertenciaText
       value: 
       objectReference: {fileID: 928263366}
@@ -135814,7 +135818,7 @@ PrefabInstance:
       objectReference: {fileID: 1091522556}
     - target: {fileID: 4572303224226913442, guid: d542a7b34f9c64b44ba52a91b1a67d16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.715902
+      value: 22.539194
       objectReference: {fileID: 0}
     - target: {fileID: 4572303224226913442, guid: d542a7b34f9c64b44ba52a91b1a67d16, type: 3}
       propertyPath: m_LocalPosition.y
