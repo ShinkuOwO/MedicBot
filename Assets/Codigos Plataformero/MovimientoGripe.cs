@@ -23,15 +23,14 @@ public class MovimientoGripe : MonoBehaviour
     private void FixedUpdate()
     {
         RaycastHit2D informacionSuelo = Physics2D.Raycast(controladorSuelo.position, Vector2.down, distancia);
-
         rb.velocity = new Vector2(velocidad, rb.velocity.y);
 
         if (informacionSuelo == false)
         {
             Girar();
         }
-    }
 
+    }
     private void Girar()
     {
         moviendoDerecha = !moviendoDerecha;
@@ -43,5 +42,6 @@ public class MovimientoGripe : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(controladorSuelo.transform.position, controladorSuelo.transform.position + Vector3.down * distancia);
+
     }
 }

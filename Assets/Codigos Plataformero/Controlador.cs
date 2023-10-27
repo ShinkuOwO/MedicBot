@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Controlador : MonoBehaviour
@@ -34,6 +35,10 @@ public class Controlador : MonoBehaviour
             // Por ejemplo, puedes cargar una nueva escena aquí.
             Debug.Log("Presionaste Enter para pasar al siguiente nivel.");
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            RestartGame();
+        }
     }
 
     public void EnemyKilled()
@@ -61,7 +66,7 @@ public class Controlador : MonoBehaviour
 
             // Activa el nuevo TextMeshPro con el mensaje "Eres un héroe"
             heroText.gameObject.SetActive(true);
-            heroText.text = "Eres un héroe";
+            heroText.text = "RECOMENDACION: Cúbrete la boca y la nariz al toser o estornudar. Cuando tosas o estornudes, cúbrete la boca y la nariz con un pañuelo de papel. Si no tienes un pañuelo, cúbrete la boca y la nariz con el antebrazo. Esto ayudará a prevenir que los gérmenes se propaguen a los demás.";
 
             // Desactiva temporalmente la interacción de los Sliders
             slidersEnabled = false;
@@ -84,5 +89,12 @@ public class Controlador : MonoBehaviour
 
         // Vuelve a habilitar la interacción de los Sliders
         slidersEnabled = true;
+    }
+
+
+    void RestartGame()
+    {
+        // Aquí puedes cargar la escena principal o la que desees reiniciar.
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
