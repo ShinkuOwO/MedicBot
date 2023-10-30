@@ -89962,7 +89962,7 @@ MonoBehaviour:
   moveSpeed: 5
   bulletPrefab: {fileID: 5601841493505001197, guid: 7e452bfc3c5662046898f11afced3683, type: 3}
   firePoint: {fileID: 1543798076}
-  bulletSpeed: 5
+  bulletSpeed: 10
   fuerzaSalto: 5
   puntoInicioRaycast: {fileID: 2040021578}
   longitudRaycast: 2
