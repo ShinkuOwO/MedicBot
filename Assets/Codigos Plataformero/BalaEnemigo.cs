@@ -45,12 +45,28 @@ public class BalaEnemigo : MonoBehaviour
             {
                 enemyHealth.TakeDamage(damage); // Aplicar daño al enemigo
             }
-
             // Destruir la bala después de la colisión
             Destroy(gameObject);
         }
         if (collision.CompareTag("Piso"))
         {
+            Destroy(gameObject);
+        }
+        if (collision.CompareTag("Infeccion"))
+        {
+            Destroy(gameObject);
+        }
+        // Verificar si la colisi?n es con un enemigo
+        if (collision.CompareTag("Infeccion"))
+        {
+            InfeccionMatar enemyHealth = collision.GetComponent<InfeccionMatar>();
+
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(damage); // Aplicar da?o al enemigo
+            }
+
+            // Destruir la bala despu?s de la colisi?n
             Destroy(gameObject);
         }
     }
