@@ -132,10 +132,10 @@ TextureImporter:
       name: Salto_0
       rect:
         serializedVersion: 2
-        x: 203
-        y: 17
+        x: 202
+        y: 5
         width: 595
-        height: 853
+        height: 865
       alignment: 9
       pivot: {x: 0.39764595, y: 0.0765488}
       border: {x: 0, y: 0, z: 0, w: 0}

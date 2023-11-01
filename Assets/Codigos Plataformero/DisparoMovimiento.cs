@@ -31,9 +31,8 @@ public class DisparoMovimiento : MonoBehaviour
     private Rigidbody2D rb;
 
 
-    private Animator Caminando;
+    private Animator An;
     private bool isFacingRight = true;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -41,8 +40,12 @@ public class DisparoMovimiento : MonoBehaviour
         balasEnCartucho = capacidadCartucho;
         cartuchos = cartuchosIniciales;
         ActualizarTextoUI();
-        Caminando = GetComponent<Animator>();
+        An = GetComponent<Animator>();
         
+    }
+    public bool puedesaltar()
+    {
+        return enSuelo;
     }
 
     void Update()
@@ -58,20 +61,31 @@ public class DisparoMovimiento : MonoBehaviour
         {
             Flip();
         }
+        enSuelo = Physics2D.Raycast(puntoInicioRaycast.position, Vector2.down, longitudRaycast, capasDeSuelo);
         //Animacion de caminar e idle
-        if (horizontalInput > 0 ||horizontalInput < 0)
+        if ((horizontalInput > 0 ||horizontalInput < 0)&& enSuelo)
         {
-            Caminando.SetInteger("Estado",1);
+            An.SetInteger("Estado",1);
+
         }
+
+        else if (!enSuelo)
+        {
+            An.SetInteger("Estado", 2);
+            
+        }
+
         else
         {
-            Caminando.SetInteger("Estado", 0);
+            An.SetInteger("Estado", 0);
         }
-        if (Input.GetButtonDown("Fire1") && balasEnCartucho > 0)
+        if (Input.GetButtonDown("Fire1") && balasEnCartucho > 0 && enSuelo)
         {
+            An.SetTrigger("Disparar");
+          
             Shoot();
+
         }
-        enSuelo = Physics2D.Raycast(puntoInicioRaycast.position, Vector2.down, longitudRaycast, capasDeSuelo);
 
         if (enSuelo && Input.GetKeyDown(KeyCode.Space))
         {
@@ -94,6 +108,8 @@ public class DisparoMovimiento : MonoBehaviour
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        
+
         Rigidbody2D rbBullet = bullet.GetComponent <Rigidbody2D>();
         balasEnCartucho--;
         ActualizarTextoUI();
@@ -110,7 +126,7 @@ public class DisparoMovimiento : MonoBehaviour
             rbBullet.velocity = -firePoint.right * bulletSpeed;
         }
     }
-    void Salto()
+    public void Salto()
     {
         rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
     }
@@ -141,7 +157,7 @@ public class DisparoMovimiento : MonoBehaviour
     {
         recargando = true;
         yield return new WaitForSeconds(0.5f);
-        balasEnCartucho = Mathf.Min(capacidadCartucho, 10);
+        balasEnCartucho = Mathf.Min(capacidadCartucho, 20);
         cartuchos--;
         recargando = false;
         ActualizarTextoUI();

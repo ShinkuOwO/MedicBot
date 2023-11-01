@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEditor.SearchService;
 
 public class ControladorDeVida : MonoBehaviour
 {
@@ -35,7 +37,7 @@ public class ControladorDeVida : MonoBehaviour
 
         if (vidaActual <= 0)
         {
-            Debug.Log("¡Perdiste!");
+            SceneManager.LoadScene("Pulmon ej");
         }
     }
 
