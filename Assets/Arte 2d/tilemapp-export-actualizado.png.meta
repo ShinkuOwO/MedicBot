@@ -67,10 +67,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -570,7 +570,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_22
       rect:
         serializedVersion: 2
-        x: 768
+        x: 1152
         y: 512
         width: 128
         height: 128
@@ -591,7 +591,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_23
       rect:
         serializedVersion: 2
-        x: 896
+        x: 1280
         y: 512
         width: 128
         height: 128
@@ -612,7 +612,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_24
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1536
         y: 512
         width: 128
         height: 128
@@ -633,7 +633,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_25
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1664
         y: 512
         width: 128
         height: 128
@@ -654,7 +654,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_26
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1792
         y: 512
         width: 128
         height: 128
@@ -675,7 +675,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_27
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1920
         y: 512
         width: 128
         height: 128
@@ -696,7 +696,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_28
       rect:
         serializedVersion: 2
-        x: 1664
+        x: 2048
         y: 512
         width: 128
         height: 128
@@ -717,8 +717,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_29
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 512
+        x: 0
+        y: 384
         width: 128
         height: 128
       alignment: 0
@@ -738,8 +738,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_30
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 512
+        x: 128
+        y: 384
         width: 128
         height: 128
       alignment: 0
@@ -759,8 +759,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_31
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 512
+        x: 256
+        y: 384
         width: 128
         height: 128
       alignment: 0
@@ -780,7 +780,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_32
       rect:
         serializedVersion: 2
-        x: 0
+        x: 384
         y: 384
         width: 128
         height: 128
@@ -801,7 +801,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_33
       rect:
         serializedVersion: 2
-        x: 128
+        x: 512
         y: 384
         width: 128
         height: 128
@@ -822,7 +822,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_34
       rect:
         serializedVersion: 2
-        x: 256
+        x: 640
         y: 384
         width: 128
         height: 128
@@ -843,7 +843,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_35
       rect:
         serializedVersion: 2
-        x: 384
+        x: 768
         y: 384
         width: 128
         height: 128
@@ -864,7 +864,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_36
       rect:
         serializedVersion: 2
-        x: 512
+        x: 896
         y: 384
         width: 128
         height: 128
@@ -885,7 +885,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_37
       rect:
         serializedVersion: 2
-        x: 640
+        x: 1024
         y: 384
         width: 128
         height: 128
@@ -906,7 +906,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_38
       rect:
         serializedVersion: 2
-        x: 768
+        x: 1152
         y: 384
         width: 128
         height: 128
@@ -927,7 +927,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_39
       rect:
         serializedVersion: 2
-        x: 896
+        x: 1664
         y: 384
         width: 128
         height: 128
@@ -948,7 +948,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_40
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1920
         y: 384
         width: 128
         height: 128
@@ -969,7 +969,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_41
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 2048
         y: 384
         width: 128
         height: 128
@@ -990,8 +990,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_42
       rect:
         serializedVersion: 2
-        x: 1664
-        y: 384
+        x: 0
+        y: 256
         width: 128
         height: 128
       alignment: 0
@@ -1011,8 +1011,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_43
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 384
+        x: 128
+        y: 256
         width: 128
         height: 128
       alignment: 0
@@ -1032,8 +1032,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_44
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 384
+        x: 256
+        y: 256
         width: 128
         height: 128
       alignment: 0
@@ -1053,8 +1053,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_45
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 384
+        x: 384
+        y: 256
         width: 128
         height: 128
       alignment: 0
@@ -1074,7 +1074,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_46
       rect:
         serializedVersion: 2
-        x: 0
+        x: 512
         y: 256
         width: 128
         height: 128
@@ -1095,7 +1095,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_47
       rect:
         serializedVersion: 2
-        x: 128
+        x: 640
         y: 256
         width: 128
         height: 128
@@ -1116,7 +1116,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_48
       rect:
         serializedVersion: 2
-        x: 256
+        x: 768
         y: 256
         width: 128
         height: 128
@@ -1137,7 +1137,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_49
       rect:
         serializedVersion: 2
-        x: 384
+        x: 1024
         y: 256
         width: 128
         height: 128
@@ -1158,7 +1158,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_50
       rect:
         serializedVersion: 2
-        x: 512
+        x: 1152
         y: 256
         width: 128
         height: 128
@@ -1179,7 +1179,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_51
       rect:
         serializedVersion: 2
-        x: 640
+        x: 1280
         y: 256
         width: 128
         height: 128
@@ -1200,7 +1200,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_52
       rect:
         serializedVersion: 2
-        x: 768
+        x: 1536
         y: 256
         width: 128
         height: 128
@@ -1221,7 +1221,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_53
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1664
         y: 256
         width: 128
         height: 128
@@ -1242,7 +1242,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_54
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1792
         y: 256
         width: 128
         height: 128
@@ -1263,7 +1263,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_55
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1920
         y: 256
         width: 128
         height: 128
@@ -1284,7 +1284,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_56
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 2048
         y: 256
         width: 128
         height: 128
@@ -1305,8 +1305,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_57
       rect:
         serializedVersion: 2
-        x: 1664
-        y: 256
+        x: 0
+        y: 128
         width: 128
         height: 128
       alignment: 0
@@ -1326,8 +1326,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_58
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 256
+        x: 128
+        y: 128
         width: 128
         height: 128
       alignment: 0
@@ -1347,8 +1347,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_59
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 256
+        x: 256
+        y: 128
         width: 128
         height: 128
       alignment: 0
@@ -1368,8 +1368,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_60
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 256
+        x: 384
+        y: 128
         width: 128
         height: 128
       alignment: 0
@@ -1389,7 +1389,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_61
       rect:
         serializedVersion: 2
-        x: 0
+        x: 512
         y: 128
         width: 128
         height: 128
@@ -1410,7 +1410,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_62
       rect:
         serializedVersion: 2
-        x: 128
+        x: 640
         y: 128
         width: 128
         height: 128
@@ -1431,7 +1431,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_63
       rect:
         serializedVersion: 2
-        x: 256
+        x: 768
         y: 128
         width: 128
         height: 128
@@ -1452,7 +1452,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_64
       rect:
         serializedVersion: 2
-        x: 384
+        x: 896
         y: 128
         width: 128
         height: 128
@@ -1473,7 +1473,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_65
       rect:
         serializedVersion: 2
-        x: 512
+        x: 1024
         y: 128
         width: 128
         height: 128
@@ -1494,7 +1494,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_66
       rect:
         serializedVersion: 2
-        x: 640
+        x: 1152
         y: 128
         width: 128
         height: 128
@@ -1515,7 +1515,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_67
       rect:
         serializedVersion: 2
-        x: 768
+        x: 1280
         y: 128
         width: 128
         height: 128
@@ -1536,7 +1536,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_68
       rect:
         serializedVersion: 2
-        x: 896
+        x: 1408
         y: 128
         width: 128
         height: 128
@@ -1557,7 +1557,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_69
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1536
         y: 128
         width: 128
         height: 128
@@ -1578,7 +1578,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_70
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1664
         y: 128
         width: 128
         height: 128
@@ -1599,7 +1599,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_71
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1792
         y: 128
         width: 128
         height: 128
@@ -1620,7 +1620,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_72
       rect:
         serializedVersion: 2
-        x: 1408
+        x: 1920
         y: 128
         width: 128
         height: 128
@@ -1641,7 +1641,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_73
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 2048
         y: 128
         width: 128
         height: 128
@@ -1662,8 +1662,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_74
       rect:
         serializedVersion: 2
-        x: 1664
-        y: 128
+        x: 128
+        y: 0
         width: 128
         height: 128
       alignment: 0
@@ -1683,8 +1683,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_75
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 128
+        x: 256
+        y: 0
         width: 128
         height: 128
       alignment: 0
@@ -1704,8 +1704,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_76
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 128
+        x: 384
+        y: 0
         width: 128
         height: 128
       alignment: 0
@@ -1725,8 +1725,8 @@ TextureImporter:
       name: tilemapp-export-actualizado_77
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 128
+        x: 512
+        y: 0
         width: 128
         height: 128
       alignment: 0
@@ -1746,7 +1746,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_78
       rect:
         serializedVersion: 2
-        x: 0
+        x: 640
         y: 0
         width: 128
         height: 128
@@ -1767,7 +1767,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_79
       rect:
         serializedVersion: 2
-        x: 128
+        x: 896
         y: 0
         width: 128
         height: 128
@@ -1788,7 +1788,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_80
       rect:
         serializedVersion: 2
-        x: 256
+        x: 1792
         y: 0
         width: 128
         height: 128
@@ -1809,7 +1809,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_81
       rect:
         serializedVersion: 2
-        x: 384
+        x: 1920
         y: 0
         width: 128
         height: 128
@@ -1830,7 +1830,7 @@ TextureImporter:
       name: tilemapp-export-actualizado_82
       rect:
         serializedVersion: 2
-        x: 512
+        x: 2048
         y: 0
         width: 128
         height: 128
@@ -1843,258 +1843,6 @@ TextureImporter:
       bones: []
       spriteID: 07d2675a53f56c14986b28ed8f562ae4
       internalID: -1755192624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapp-export-actualizado_83
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ac4f7277d5b6b543806e911b83c8284
-      internalID: 1323497439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapp-export-actualizado_84
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ad7ddd0537d4c44fa5d98c22c11d936
-      internalID: -382803327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapp-export-actualizado_85
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02430bf20152fd3439c87b6903b2afdf
-      internalID: 127262391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapp-export-actualizado_86
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae33b101583779a42a3f67d07af7d0b9
-      internalID: 1560282978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapp-export-actualizado_87
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86e6ed7698cfb384384f2a5e6a80c5f5
-      internalID: -1162478128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapp-export-actualizado_88
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56d2826052598364e8e3d2bc264f337e
-      internalID: 1991493520
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapp-export-actualizado_89
-      rect:
-        serializedVersion: 2
-        x: 1408
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4aaea05f9040084d86573a3faa263a6
-      internalID: -930447274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapp-export-actualizado_90
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c0f39fdd54944b468494b47adf50781
-      internalID: 725910066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapp-export-actualizado_91
-      rect:
-        serializedVersion: 2
-        x: 1664
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 108a399adbaa0ff43bb00d2a79e87557
-      internalID: 72781552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapp-export-actualizado_92
-      rect:
-        serializedVersion: 2
-        x: 1792
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2178d32eaab058a498de4657e843e737
-      internalID: 1722572859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapp-export-actualizado_93
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df274867e75e8374d9c4cb86fad7dcba
-      internalID: 200723969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapp-export-actualizado_94
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 238e4857f34b26048bd03bcaccc97372
-      internalID: 5941561
       vertices: []
       indices: 
       edges: []
@@ -2192,19 +1940,7 @@ TextureImporter:
       tilemapp-export-actualizado_80: 613185146
       tilemapp-export-actualizado_81: 1053249808
       tilemapp-export-actualizado_82: -1755192624
-      tilemapp-export-actualizado_83: 1323497439
-      tilemapp-export-actualizado_84: -382803327
-      tilemapp-export-actualizado_85: 127262391
-      tilemapp-export-actualizado_86: 1560282978
-      tilemapp-export-actualizado_87: -1162478128
-      tilemapp-export-actualizado_88: 1991493520
-      tilemapp-export-actualizado_89: -930447274
       tilemapp-export-actualizado_9: 747813696
-      tilemapp-export-actualizado_90: 725910066
-      tilemapp-export-actualizado_91: 72781552
-      tilemapp-export-actualizado_92: 1722572859
-      tilemapp-export-actualizado_93: 200723969
-      tilemapp-export-actualizado_94: 5941561
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
