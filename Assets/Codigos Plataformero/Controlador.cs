@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Controlador : MonoBehaviour
@@ -12,7 +13,7 @@ public class Controlador : MonoBehaviour
     public TextMeshProUGUI victoryText;
     public TextMeshProUGUI additionalText;
     public TextMeshProUGUI heroText; // Nuevo TextMeshProUGUI para mostrar "Eres un héroe"
-    public Slider slider; // Asocia tu Slider desde el Inspector
+
 
     private bool isGamePaused = false;
     private bool slidersEnabled = true;
@@ -34,6 +35,10 @@ public class Controlador : MonoBehaviour
             // Por ejemplo, puedes cargar una nueva escena aquí.
             Debug.Log("Presionaste Enter para pasar al siguiente nivel.");
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            RestartGame();
+        }
     }
 
     public void EnemyKilled()
@@ -53,11 +58,11 @@ public class Controlador : MonoBehaviour
             victoryPanel.SetActive(true);
 
             // Cambia el texto del panel
-            victoryText.text = "¡Has vencido al virus gripe!";
+            victoryText.text = "¡Has vencido al virus Bronquitis!";
 
             // Activa el TextMeshPro adicional con el mensaje "Presiona Enter para pasar al siguiente nivel"
             additionalText.gameObject.SetActive(true);
-            additionalText.text = "Presiona Enter para pasar al siguiente nivel";
+            additionalText.text = "Presiona ESC para pasar al siguiente nivel";
 
             // Activa el nuevo TextMeshPro con el mensaje "Eres un héroe"
             heroText.gameObject.SetActive(true);
@@ -81,8 +86,12 @@ public class Controlador : MonoBehaviour
 
         // Reactiva el juego
         Time.timeScale = 1f;
+    }
 
-        // Vuelve a habilitar la interacción de los Sliders
-        slidersEnabled = true;
+
+    void RestartGame()
+    {
+        // Aquí puedes cargar la escena principal o la que desees reiniciar.
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

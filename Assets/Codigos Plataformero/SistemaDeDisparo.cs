@@ -103,9 +103,6 @@ public class SistemaDeDisparo : MonoBehaviour
         {
             StartCoroutine(Recargar());
         }
-
-
-
     }
 
     void disparar1()//Enemigo
@@ -131,7 +128,6 @@ public class SistemaDeDisparo : MonoBehaviour
         {
 
         }
-
     }
     private IEnumerator Recargar()
     {

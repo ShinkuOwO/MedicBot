@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5246885277729735874}
   - component: {fileID: 5246885277729735875}
-  - component: {fileID: 5246885277729735876}
   - component: {fileID: 5246885277729735873}
+  - component: {fileID: 7586249550713116006}
   - component: {fileID: 5246885277729735872}
+  - component: {fileID: 8571801725741976279}
   m_Layer: 0
   m_Name: Infeccion
   m_TagString: Infeccion
@@ -87,19 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5246885277729735876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5246885277729735878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56c82b51d4603ce4f9c9e0b7a665cdb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
 --- !u!114 &5246885277729735873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +101,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cantidadRestaVida: 10
+--- !u!114 &7586249550713116006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246885277729735878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67f3b88523337a34a905406e47251cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cantidadPuntos: 150
+  maxHealth: 100
+  puntaje: {fileID: 0}
 --- !u!61 &5246885277729735872
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -139,3 +142,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.32, y: 0.91481876}
   m_EdgeRadius: 0
+--- !u!114 &8571801725741976279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246885277729735878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c82b51d4603ce4f9c9e0b7a665cdb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10

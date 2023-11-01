@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 07d057ed3a02b79478c24e354413c3d1
+guid: 0b9f242925ae02d43b3796bada8b9372
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -129,127 +129,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gripe_0
+      name: Disparar_0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 326
-        width: 251
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 25
+        width: 810
+        height: 878
+      alignment: 9
+      pivot: {x: 0.3, y: 0.09}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da0423b8adbfab14699c40151b6eac09
-      internalID: 1954461660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gripe_1
-      rect:
-        serializedVersion: 2
-        x: 301
-        y: 325
-        width: 251
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46e91df6c87485d41815f22d8e61185a
-      internalID: 1293915789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gripe_2
-      rect:
-        serializedVersion: 2
-        x: 558
-        y: 325
-        width: 251
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 072dc378ee6233b49926f94151225788
-      internalID: 893873478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gripe_3
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 17
-        width: 251
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c789490b861f51643afa6c2c1463d43f
-      internalID: 198273482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gripe_4
-      rect:
-        serializedVersion: 2
-        x: 292
-        y: 17
-        width: 251
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02c87187480f6bb4e9343bb505f74b0a
-      internalID: 1698535058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gripe_5
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 18
-        width: 251
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93a9c7b524cac2a438d90da902146a4f
-      internalID: 1119677112
+      spriteID: a01f4da6f4452f6428974fcad3550021
+      internalID: -363031342
       vertices: []
       indices: 
       edges: []
@@ -265,12 +160,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Gripe_0: 1954461660
-      Gripe_1: 1293915789
-      Gripe_2: 893873478
-      Gripe_3: 198273482
-      Gripe_4: 1698535058
-      Gripe_5: 1119677112
+      Disparar_0: -363031342
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -9,12 +9,17 @@ public class PlataformaMovil : MonoBehaviour
     public Transform[] moveSpots;
     public float startWaitTime = 2;
     private int i = 0;
+    //DisparoMovimiento DM;
+
+    //private bool enSuelo;
     private void Start()
     {
         waitTime = startWaitTime;
+        //DM = FindObjectOfType<DisparoMovimiento>();
     }
     private void Update()
     {
+        //enSuelo = DM.puedesaltar();
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[i].position, speed * Time.deltaTime);
         if (Vector2.Distance(transform.position, moveSpots[i].transform.position) < 0.1f)
         {
@@ -35,10 +40,18 @@ public class PlataformaMovil : MonoBehaviour
                 waitTime -= Time.deltaTime;
             }
         }
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         collision.collider.transform.SetParent(transform);
+        //Debug.Log("en suelo: "+ enSuelo);
+        //if (enSuelo && Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    DM.Salto();
+
+        //}
+
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
