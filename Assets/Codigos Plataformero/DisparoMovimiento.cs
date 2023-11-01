@@ -29,16 +29,19 @@ public class DisparoMovimiento : MonoBehaviour
     private bool enSuelo;
 
     private Rigidbody2D rb;
-    //private Animator animator;
+
+
+    private Animator Caminando;
     private bool isFacingRight = true;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //animator = GetComponent<Animator>();
+
         balasEnCartucho = capacidadCartucho;
         cartuchos = cartuchosIniciales;
         ActualizarTextoUI();
+        Caminando = GetComponent<Animator>();
         
     }
 
@@ -55,14 +58,22 @@ public class DisparoMovimiento : MonoBehaviour
         {
             Flip();
         }
-
+        //Animacion de caminar e idle
+        if (horizontalInput > 0 ||horizontalInput < 0)
+        {
+            Caminando.SetInteger("Estado",1);
+        }
+        else
+        {
+            Caminando.SetInteger("Estado", 0);
+        }
         if (Input.GetButtonDown("Fire1") && balasEnCartucho > 0)
         {
             Shoot();
         }
         enSuelo = Physics2D.Raycast(puntoInicioRaycast.position, Vector2.down, longitudRaycast, capasDeSuelo);
 
-        if (enSuelo && Input.GetKeyDown(KeyCode.W))
+        if (enSuelo && Input.GetKeyDown(KeyCode.Space))
         {
             Salto();
         }
@@ -70,8 +81,6 @@ public class DisparoMovimiento : MonoBehaviour
         {
             StartCoroutine(Recargar());
         }
-
-        //animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
     }
 
     void Flip()
@@ -103,7 +112,6 @@ public class DisparoMovimiento : MonoBehaviour
     }
     void Salto()
     {
-        //animator.SetTrigger("Salto"); // Activa la animación de salto
         rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
     }
     private void ActualizarTextoUI()
