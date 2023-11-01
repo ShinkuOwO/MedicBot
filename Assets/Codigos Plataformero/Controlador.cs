@@ -58,11 +58,11 @@ public class Controlador : MonoBehaviour
             victoryPanel.SetActive(true);
 
             // Cambia el texto del panel
-            victoryText.text = "¡Has vencido al virus gripe!";
+            victoryText.text = "¡Has vencido al virus Bronquitis!";
 
             // Activa el TextMeshPro adicional con el mensaje "Presiona Enter para pasar al siguiente nivel"
             additionalText.gameObject.SetActive(true);
-            additionalText.text = "Presiona Enter para pasar al siguiente nivel";
+            additionalText.text = "Presiona ESC para pasar al siguiente nivel";
 
             // Activa el nuevo TextMeshPro con el mensaje "Eres un héroe"
             heroText.gameObject.SetActive(true);

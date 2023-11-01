@@ -43,6 +43,10 @@ public class DisparoMovimiento : MonoBehaviour
         An = GetComponent<Animator>();
         
     }
+    public bool puedesaltar()
+    {
+        return enSuelo;
+    }
 
     void Update()
     {
@@ -122,7 +126,7 @@ public class DisparoMovimiento : MonoBehaviour
             rbBullet.velocity = -firePoint.right * bulletSpeed;
         }
     }
-    void Salto()
+    public void Salto()
     {
         rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
     }
@@ -153,7 +157,7 @@ public class DisparoMovimiento : MonoBehaviour
     {
         recargando = true;
         yield return new WaitForSeconds(0.5f);
-        balasEnCartucho = Mathf.Min(capacidadCartucho, 10);
+        balasEnCartucho = Mathf.Min(capacidadCartucho, 20);
         cartuchos--;
         recargando = false;
         ActualizarTextoUI();
