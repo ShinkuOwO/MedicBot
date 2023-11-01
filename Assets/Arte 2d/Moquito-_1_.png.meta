@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 07d057ed3a02b79478c24e354413c3d1
+guid: 51bce102aa4ff5b4192aa09229c8f67b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,127 +129,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gripe_0
+      name: Moquito-_1__0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 326
-        width: 251
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 204
+        y: 943
+        width: 573
+        height: 813
+      alignment: 9
+      pivot: {x: 0.4519995, y: 0.1375294}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da0423b8adbfab14699c40151b6eac09
-      internalID: 1954461660
+      spriteID: 56e6afce07808c541850c4259413fbcf
+      internalID: -548456027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gripe_1
+      name: Moquito-_1__1
       rect:
         serializedVersion: 2
-        x: 301
-        y: 325
-        width: 251
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1126
+        y: 943
+        width: 612
+        height: 787
+      alignment: 9
+      pivot: {x: 0.45291817, y: 0.13054714}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46e91df6c87485d41815f22d8e61185a
-      internalID: 1293915789
+      spriteID: e360f8b0d916cb3428d2218c86821950
+      internalID: -436232527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gripe_2
+      name: Moquito-_1__2
       rect:
         serializedVersion: 2
-        x: 558
-        y: 325
-        width: 251
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2056
+        y: 939
+        width: 615
+        height: 746
+      alignment: 9
+      pivot: {x: 0.45740718, y: 0.14008845}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 072dc378ee6233b49926f94151225788
-      internalID: 893873478
+      spriteID: 85404368066d31c4990e98fde6d23954
+      internalID: -617375293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gripe_3
+      name: Moquito-_1__3
       rect:
         serializedVersion: 2
-        x: 40
-        y: 17
-        width: 251
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2987
+        y: 950
+        width: 617
+        height: 652
+      alignment: 9
+      pivot: {x: 0.46179062, y: 0.14846277}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c789490b861f51643afa6c2c1463d43f
-      internalID: 198273482
+      spriteID: 455922ab6eb906542a0de7e8fbf8a1d0
+      internalID: -353366777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gripe_4
+      name: Moquito-_1__4
       rect:
         serializedVersion: 2
-        x: 292
-        y: 17
-        width: 251
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3862
+        y: 950
+        width: 694
+        height: 583
+      alignment: 9
+      pivot: {x: 0.516985, y: 0.15852746}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c87187480f6bb4e9343bb505f74b0a
-      internalID: 1698535058
+      spriteID: e89f321da4e17094f8ee6f47dac1bf50
+      internalID: 1610210250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gripe_5
+      name: Moquito-_1__5
       rect:
         serializedVersion: 2
-        x: 544
-        y: 18
-        width: 251
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4770
+        y: 966
+        width: 758
+        height: 486
+      alignment: 9
+      pivot: {x: 0.5207339, y: 0.15505114}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93a9c7b524cac2a438d90da902146a4f
-      internalID: 1119677112
+      spriteID: 6fbff69b6608c5d4ba21f10a107491ba
+      internalID: -1949471242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moquito-_1__6
+      rect:
+        serializedVersion: 2
+        x: 5737
+        y: 950
+        width: 692
+        height: 589
+      alignment: 9
+      pivot: {x: 0.5170334, y: 0.14644024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621d8be128687884ba16e5bea6329915
+      internalID: 1329794305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moquito-_1__7
+      rect:
+        serializedVersion: 2
+        x: 6737
+        y: 950
+        width: 615
+        height: 652
+      alignment: 9
+      pivot: {x: 0.46805528, y: 0.14645405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ec91b813d751245b6b6e8dfcd7e322
+      internalID: 1429571735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moquito-_1__8
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2
+        width: 615
+        height: 746
+      alignment: 9
+      pivot: {x: 0.46220005, y: 0.13990062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be92cb211e5081438de67da3c10557e
+      internalID: -1625523677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moquito-_1__9
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 8
+        width: 612
+        height: 787
+      alignment: 9
+      pivot: {x: 0.45779398, y: 0.12693354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee74cefb51e3cce4eb6b19bb07325151
+      internalID: 2000051637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moquito-_1__10
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 6
+        width: 570
+        height: 812
+      alignment: 9
+      pivot: {x: 0.4515882, y: 0.1312743}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de681c5af4e880458243efa027bb42c
+      internalID: 673009026
       vertices: []
       indices: 
       edges: []
@@ -265,12 +370,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Gripe_0: 1954461660
-      Gripe_1: 1293915789
-      Gripe_2: 893873478
-      Gripe_3: 198273482
-      Gripe_4: 1698535058
-      Gripe_5: 1119677112
+      Moquito-_1__0: -548456027
+      Moquito-_1__1: -436232527
+      Moquito-_1__10: 673009026
+      Moquito-_1__2: -617375293
+      Moquito-_1__3: -353366777
+      Moquito-_1__4: 1610210250
+      Moquito-_1__5: -1949471242
+      Moquito-_1__6: 1329794305
+      Moquito-_1__7: 1429571735
+      Moquito-_1__8: -1625523677
+      Moquito-_1__9: 2000051637
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -13,7 +13,7 @@ public class Controlador : MonoBehaviour
     public TextMeshProUGUI victoryText;
     public TextMeshProUGUI additionalText;
     public TextMeshProUGUI heroText; // Nuevo TextMeshProUGUI para mostrar "Eres un héroe"
-    public Slider slider; // Asocia tu Slider desde el Inspector
+
 
     private bool isGamePaused = false;
     private bool slidersEnabled = true;
@@ -86,9 +86,6 @@ public class Controlador : MonoBehaviour
 
         // Reactiva el juego
         Time.timeScale = 1f;
-
-        // Vuelve a habilitar la interacción de los Sliders
-        slidersEnabled = true;
     }
 
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BalaEnemigo : MonoBehaviour
 {
-    public int speed = 50;
+  
 
     public int timer = 1;
 
@@ -16,10 +16,6 @@ public class BalaEnemigo : MonoBehaviour
         // Comenzar una corutina que destruirá la bala después de un tiempo especificado
         StartCoroutine(DestruirDespuesDeTiempo());
         Destroy(gameObject, timer);
-    }
-    void Update()
-    {
-        transform.position += transform.right * Time.deltaTime * speed;
     }
 
     private IEnumerator DestruirDespuesDeTiempo()
@@ -45,12 +41,28 @@ public class BalaEnemigo : MonoBehaviour
             {
                 enemyHealth.TakeDamage(damage); // Aplicar daño al enemigo
             }
-
             // Destruir la bala después de la colisión
             Destroy(gameObject);
         }
         if (collision.CompareTag("Piso"))
         {
+            Destroy(gameObject);
+        }
+        if (collision.CompareTag("Infeccion"))
+        {
+            Destroy(gameObject);
+        }
+        // Verificar si la colisi?n es con un enemigo
+        if (collision.CompareTag("Infeccion"))
+        {
+            InfeccionMatar enemyHealth = collision.GetComponent<InfeccionMatar>();
+
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(damage); // Aplicar da?o al enemigo
+            }
+
+            // Destruir la bala despu?s de la colisi?n
             Destroy(gameObject);
         }
     }
