@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 51bce102aa4ff5b4192aa09229c8f67b
+guid: bcfbffb0c408b044bb0f03ae1db97540
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,232 +129,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Moquito-_1__0
+      name: Caminar_0
       rect:
         serializedVersion: 2
-        x: 204
-        y: 943
-        width: 573
-        height: 813
+        x: 0
+        y: 54
+        width: 802
+        height: 872
       alignment: 9
-      pivot: {x: 0.4519995, y: 0.1375294}
+      pivot: {x: 0.3, y: 0.09}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56e6afce07808c541850c4259413fbcf
-      internalID: -548456027
+      spriteID: a5782062b83915441844a7ffbe5e403b
+      internalID: -377207393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moquito-_1__1
+      name: Caminar_1
       rect:
         serializedVersion: 2
-        x: 1126
-        y: 943
-        width: 612
-        height: 787
+        x: 839
+        y: 58
+        width: 802
+        height: 870
       alignment: 9
-      pivot: {x: 0.45291817, y: 0.13054714}
+      pivot: {x: 0.3, y: 0.09}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e360f8b0d916cb3428d2218c86821950
-      internalID: -436232527
+      spriteID: fb6a994bf67db4b46b502e7472b86bf3
+      internalID: -1943116427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moquito-_1__2
+      name: Caminar_2
       rect:
         serializedVersion: 2
-        x: 2056
-        y: 939
-        width: 615
-        height: 746
+        x: 1680
+        y: 54
+        width: 802
+        height: 874
       alignment: 9
-      pivot: {x: 0.45740718, y: 0.14008845}
+      pivot: {x: 0.3, y: 0.09}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85404368066d31c4990e98fde6d23954
-      internalID: -617375293
+      spriteID: 9dfebc0fc7681fe439c2b335b089649c
+      internalID: 371094837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moquito-_1__3
+      name: Caminar_3
       rect:
         serializedVersion: 2
-        x: 2987
-        y: 950
-        width: 617
-        height: 652
+        x: 2522
+        y: 54
+        width: 814
+        height: 874
       alignment: 9
-      pivot: {x: 0.46179062, y: 0.14846277}
+      pivot: {x: 0.3, y: 0.09}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 455922ab6eb906542a0de7e8fbf8a1d0
-      internalID: -353366777
+      spriteID: f00d01ea1d1dcb94a8c953be89c01c98
+      internalID: -539448328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moquito-_1__4
+      name: Caminar_4
       rect:
         serializedVersion: 2
-        x: 3862
-        y: 950
-        width: 694
-        height: 583
+        x: 3370
+        y: 54
+        width: 806
+        height: 874
       alignment: 9
-      pivot: {x: 0.516985, y: 0.15852746}
+      pivot: {x: 0.3, y: 0.09}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e89f321da4e17094f8ee6f47dac1bf50
-      internalID: 1610210250
+      spriteID: 018206aca9727d3448622337028598ff
+      internalID: 1618543534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moquito-_1__5
+      name: Caminar_5
       rect:
         serializedVersion: 2
-        x: 4770
-        y: 966
-        width: 758
-        height: 486
+        x: 4188
+        y: 53
+        width: 829
+        height: 874
       alignment: 9
-      pivot: {x: 0.5207339, y: 0.15505114}
+      pivot: {x: 0.3, y: 0.09}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fbff69b6608c5d4ba21f10a107491ba
-      internalID: -1949471242
+      spriteID: 55fb95aec6a33104399f0d0a8cbfdb6b
+      internalID: -216803894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moquito-_1__6
+      name: Caminar_6
       rect:
         serializedVersion: 2
-        x: 5737
-        y: 950
-        width: 692
-        height: 589
+        x: 5053
+        y: 50
+        width: 804
+        height: 878
       alignment: 9
-      pivot: {x: 0.5170334, y: 0.14644024}
+      pivot: {x: 0.3, y: 0.09}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 621d8be128687884ba16e5bea6329915
-      internalID: 1329794305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Moquito-_1__7
-      rect:
-        serializedVersion: 2
-        x: 6737
-        y: 950
-        width: 615
-        height: 652
-      alignment: 9
-      pivot: {x: 0.46805528, y: 0.14645405}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07ec91b813d751245b6b6e8dfcd7e322
-      internalID: 1429571735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Moquito-_1__8
-      rect:
-        serializedVersion: 2
-        x: 181
-        y: 2
-        width: 615
-        height: 746
-      alignment: 9
-      pivot: {x: 0.46220005, y: 0.13990062}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6be92cb211e5081438de67da3c10557e
-      internalID: -1625523677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Moquito-_1__9
-      rect:
-        serializedVersion: 2
-        x: 1126
-        y: 8
-        width: 612
-        height: 787
-      alignment: 9
-      pivot: {x: 0.45779398, y: 0.12693354}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee74cefb51e3cce4eb6b19bb07325151
-      internalID: 2000051637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Moquito-_1__10
-      rect:
-        serializedVersion: 2
-        x: 2082
-        y: 6
-        width: 570
-        height: 812
-      alignment: 9
-      pivot: {x: 0.4515882, y: 0.1312743}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5de681c5af4e880458243efa027bb42c
-      internalID: 673009026
+      spriteID: 1e4e9f5ae5f14324180fdc40c2eaf1f2
+      internalID: -317365198
       vertices: []
       indices: 
       edges: []
@@ -370,17 +286,36 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Moquito-_1__0: -548456027
-      Moquito-_1__1: -436232527
-      Moquito-_1__10: 673009026
-      Moquito-_1__2: -617375293
-      Moquito-_1__3: -353366777
-      Moquito-_1__4: 1610210250
-      Moquito-_1__5: -1949471242
-      Moquito-_1__6: 1329794305
-      Moquito-_1__7: 1429571735
-      Moquito-_1__8: -1625523677
-      Moquito-_1__9: 2000051637
+      Caminar_0: -377207393
+      Caminar_1: -1943116427
+      Caminar_10: -846410158
+      Caminar_11: 480352857
+      Caminar_12: 1093641858
+      Caminar_13: 181168332
+      Caminar_14: 788256472
+      Caminar_15: -1983103928
+      Caminar_16: 465368649
+      Caminar_17: 1318836111
+      Caminar_18: 1917127227
+      Caminar_19: 1344691647
+      Caminar_2: 371094837
+      Caminar_20: 15844073
+      Caminar_21: 878501368
+      Caminar_22: 1477898252
+      Caminar_23: -511552068
+      Caminar_24: -1965847196
+      Caminar_25: -2028415974
+      Caminar_26: -1268048209
+      Caminar_27: 172578010
+      Caminar_28: 250045689
+      Caminar_29: -2094447800
+      Caminar_3: -539448328
+      Caminar_4: 1618543534
+      Caminar_5: -216803894
+      Caminar_6: -317365198
+      Caminar_7: 1991322104
+      Caminar_8: -561494200
+      Caminar_9: -1803074759
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
