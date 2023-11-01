@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BalaEnemigo : MonoBehaviour
 {
-  
+    public int speed = 50;
 
     public int timer = 1;
 
@@ -16,6 +16,10 @@ public class BalaEnemigo : MonoBehaviour
         // Comenzar una corutina que destruirá la bala después de un tiempo especificado
         StartCoroutine(DestruirDespuesDeTiempo());
         Destroy(gameObject, timer);
+    }
+    void Update()
+    {
+        transform.position += transform.right * Time.deltaTime * speed;
     }
 
     private IEnumerator DestruirDespuesDeTiempo()
