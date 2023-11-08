@@ -15,8 +15,7 @@ public class Controlador : MonoBehaviour
     public TextMeshProUGUI heroText; // Nuevo TextMeshProUGUI para mostrar "Eres un héroe"
 
 
-    private bool isGamePaused = false;
-    private bool slidersEnabled = true;
+    
     private bool isGameOver = false;
 
     private void Start()
@@ -35,7 +34,7 @@ public class Controlador : MonoBehaviour
             // Por ejemplo, puedes cargar una nueva escena aquí.
             Debug.Log("Presionaste Enter para pasar al siguiente nivel.");
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             RestartGame();
         }
@@ -62,14 +61,13 @@ public class Controlador : MonoBehaviour
 
             // Activa el TextMeshPro adicional con el mensaje "Presiona Enter para pasar al siguiente nivel"
             additionalText.gameObject.SetActive(true);
-            additionalText.text = "Presiona ESC para pasar al siguiente nivel";
+            additionalText.text = "Presiona ENTER para pasar al siguiente nivel";
 
             // Activa el nuevo TextMeshPro con el mensaje "Eres un héroe"
             heroText.gameObject.SetActive(true);
             heroText.text = "RECOMENDACION: Cúbrete la boca y la nariz al toser o estornudar. Cuando tosas o estornudes, cúbrete la boca y la nariz con un pañuelo de papel. Si no tienes un pañuelo, cúbrete la boca y la nariz con el antebrazo. Esto ayudará a prevenir que los gérmenes se propaguen a los demás.";
 
-            // Desactiva temporalmente la interacción de los Sliders
-            slidersEnabled = false;
+          
 
             isGameOver = true;
         }
