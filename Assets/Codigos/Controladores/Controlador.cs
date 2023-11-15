@@ -12,10 +12,7 @@ public class Controlador : MonoBehaviour
     public GameObject victoryPanel;
     public TextMeshProUGUI victoryText;
     public TextMeshProUGUI additionalText;
-    public TextMeshProUGUI heroText; // Nuevo TextMeshProUGUI para mostrar "Eres un héroe"
-
-
-    
+    public TextMeshProUGUI heroText;
     private bool isGameOver = false;
 
     private void Start()
@@ -32,7 +29,7 @@ public class Controlador : MonoBehaviour
         {
             // Código para pasar al siguiente nivel o realizar alguna acción al presionar Enter
             // Por ejemplo, puedes cargar una nueva escena aquí.
-            Debug.Log("Presionaste Enter para pasar al siguiente nivel.");
+            SceneManager.LoadScene("Calculos");
         }
         if (Input.GetKeyDown(KeyCode.KeypadEnter))
         {
@@ -46,13 +43,6 @@ public class Controlador : MonoBehaviour
 
         if (enemiesKilled >= enemiesToKill)
         {
-            // Pausa el juego
-            Time.timeScale = 0f;
-
-            // Muestra el cursor del mouse
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-
             // Muestra el panel de victoria
             victoryPanel.SetActive(true);
 
@@ -67,29 +57,13 @@ public class Controlador : MonoBehaviour
             heroText.gameObject.SetActive(true);
             heroText.text = "RECOMENDACION: Cúbrete la boca y la nariz al toser o estornudar. Cuando tosas o estornudes, cúbrete la boca y la nariz con un pañuelo de papel. Si no tienes un pañuelo, cúbrete la boca y la nariz con el antebrazo. Esto ayudará a prevenir que los gérmenes se propaguen a los demás.";
 
-          
-
             isGameOver = true;
         }
     }
 
-    public void ResumeGame()
-    {
-        // Oculta el cursor del mouse
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-
-        // Desactiva el panel de victoria
-        victoryPanel.SetActive(false);
-
-        // Reactiva el juego
-        Time.timeScale = 1f;
-    }
-
-
     void RestartGame()
     {
-        // Aquí puedes cargar la escena principal o la que desees reiniciar.
+        // Reinicia la escena actual
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
