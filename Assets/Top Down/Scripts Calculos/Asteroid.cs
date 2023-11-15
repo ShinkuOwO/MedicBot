@@ -24,28 +24,28 @@ public class Asteroid : MonoBehaviour {
         rb.angularVelocity = Random.Range (-50f, 50f);
     }
 
-    private void OnTriggerEnter2D (Collider2D col) 
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag ("Bullet")) 
+       
+        if (col.CompareTag("Player"))
         {
-            Destroy (gameObject);
-            Destroy (col.gameObject);
-            for (var i = 0; i < numberOfAsteroids; i++) 
+            var asteroids = FindObjectsOfType<Asteroid>();
+            for (var i = 0; i < asteroids.Length; i++)
+            {
+                Destroy(asteroids[i].gameObject);
+            }
+            col.GetComponent<Playermov>().Lose();
+        }
+        if (col.CompareTag("Bala"))
+        {
+            Destroy(gameObject);
+            Destroy(col.gameObject);
+            for (var i = 0; i < numberOfAsteroids; i++)
             {
                 Instantiate(subAsteroids[Random.Range(0, subAsteroids.Length)],
                             transform.position,
                             Quaternion.identity);
             }
         }
-        if (col.CompareTag ("Player")) 
-        {
-            var asteroids = FindObjectsOfType<Asteroid>();
-            for(var i = 0; i < asteroids.Length; i++) 
-            {
-                Destroy(asteroids[i].gameObject);
-            }
-            col.GetComponent<Playermov>().Lose();
-        }
     }
-
 }

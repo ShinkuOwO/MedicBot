@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7328390555483692986}
   - component: {fileID: 7328390555483692985}
   - component: {fileID: 1683453924}
+  - component: {fileID: 2949662951282440178}
   - component: {fileID: 1683453925}
-  - component: {fileID: 7903041298599965435}
   m_Layer: 0
   m_Name: asteroid_S
   m_TagString: Enemy
@@ -153,6 +153,19 @@ MonoBehaviour:
     inferiorBorder: -15
     leftBorder: -24
     rightBorder: 24
+--- !u!114 &2949662951282440178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7328390555483692984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eedc82b2bdd37e438164b4502b07911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntajePorDestruccion: 5
 --- !u!114 &1683453925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,18 +180,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 9
   subAsteroids: []
-  numberOfAsteroids: 1
---- !u!114 &7903041298599965435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7328390555483692984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8eedc82b2bdd37e438164b4502b07911, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controladorDePuntos: {fileID: 4198005521939374117, guid: d072c69217952c84296af4e3f44e6394, type: 3}
-  PuntosPorItem: 10
+  numberOfAsteroids: 0
