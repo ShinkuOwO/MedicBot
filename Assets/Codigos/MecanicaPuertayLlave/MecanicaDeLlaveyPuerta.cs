@@ -30,10 +30,10 @@ public class MecanicaDeLlaveyPuerta : MonoBehaviour
 
     private IEnumerator TransicionCamara()
     {
-        CinemachineBrain brain = Camera.main.GetComponent<CinemachineBrain>();
-        if (brain != null)
+        CinemachineConfiner confiner = Camera.main.GetComponent<CinemachineConfiner>();
+        if (confiner != null)
         {
-            brain.enabled = false;
+            confiner.enabled = false;
         }
 
         yield return new WaitForSeconds(3f); // Espera 3 segundos y destruye la puerta
@@ -48,9 +48,9 @@ public class MecanicaDeLlaveyPuerta : MonoBehaviour
         camaraPersonaje.gameObject.SetActive(true);
         camaraPuerta.gameObject.SetActive(false);
 
-        if (brain != null)
+        if (confiner != null)
         {
-            brain.enabled = true;
+            confiner.enabled = true;
         }
 
         enTransicion = false;
