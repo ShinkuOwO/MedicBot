@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class MecanicaDeLlaveyPuerta : MonoBehaviour
 {
-    public Camera camaraPersonaje;
-    public Camera camaraPuerta;
+    public CinemachineVirtualCamera camaraPersonaje;
+    public CinemachineVirtualCamera camaraPuerta;
     public GameObject puerta;
 
     private bool llaveRecogida = false;
@@ -19,7 +19,7 @@ public class MecanicaDeLlaveyPuerta : MonoBehaviour
             llaveRecogida = true;
             enTransicion = true;
 
-            // Desactiva la cámara del personaje y activa la de la puerta (sin usar Cinemachine)
+            // Desactiva la cámara virtual del personaje y activa la de la puerta
             camaraPersonaje.gameObject.SetActive(false);
             camaraPuerta.gameObject.SetActive(true);
 
@@ -44,7 +44,7 @@ public class MecanicaDeLlaveyPuerta : MonoBehaviour
         // Desactiva la llave
         gameObject.SetActive(false);
 
-        // Activa la cámara del personaje y desactiva la de la puerta (sin usar Cinemachine)
+        // Activa la cámara virtual del personaje y desactiva la de la puerta
         camaraPersonaje.gameObject.SetActive(true);
         camaraPuerta.gameObject.SetActive(false);
 
