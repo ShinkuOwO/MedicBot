@@ -9,14 +9,14 @@ public class AsteroidPuntaje : MonoBehaviour
     
     public int puntajePorDestruccion = 10;
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Bala"))
+        if (other.gameObject.CompareTag("Bala"))
         {
             // Destruir el asteroide y sumar puntaje al GameManager
             Destroy(gameObject);
             GameManager.instance.SumarPuntaje(puntajePorDestruccion);
-            
+
         }
     }
 }

@@ -10,15 +10,14 @@ public class ConstantMovement : MonoBehaviour {
     {
         transform.position += transform.up * speed * Time.deltaTime;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    
-    if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            // Destruir el asteroide y sumar puntaje al GameManager
             Destroy(gameObject);
         }
+        
     }
 
 }
