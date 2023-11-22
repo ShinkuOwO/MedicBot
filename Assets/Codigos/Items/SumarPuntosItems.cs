@@ -8,11 +8,14 @@ public class SumarPuntosItems : MonoBehaviour
     [SerializeField] private float cantidadPuntos;
     [Header("Arrastra el texto del canvas")]
     [SerializeField] private SistemaDePuntaje puntaje;
+   
+    [SerializeField] private AudioClip Hoja;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             puntaje.SumarPuntos(cantidadPuntos);
+            Sonidos.Instance.EjecutarSonido(Hoja);
             Destroy(gameObject);
 
         }

@@ -6,29 +6,24 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    public string gameSceneName;
+    // ...
 
-    private Button playButton;
-    private Button quitButton;
-
-    private void Start()
+    // Llamado cuando se presiona el botón de salida
+    public void SalirDelJuegoConRetraso()
     {
-        // Encuentra los botones por sus nombres
-        playButton = GameObject.Find("Jugar").GetComponent<Button>();
-        quitButton = GameObject.Find("Salir").GetComponent<Button>();
-
-        // Asocia los métodos a los eventos de clic
-        playButton.onClick.AddListener(PlayGame);
-        quitButton.onClick.AddListener(QuitGame);
+        // Invoca el método SalirDelJuego con un retraso de 1 segundo
+        Invoke("SalirDelJuego", 1.0f);
     }
 
-    public void PlayGame()
+    // Llamado cuando se presiona el botón de salida después del retraso
+    private void SalirDelJuego()
     {
-        SceneManager.LoadScene(gameSceneName);
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 
-    public void QuitGame()
-    {
-        Application.Quit(); // Esto solo funciona en la versión compilada del juego
-    }
+    // ...
 }

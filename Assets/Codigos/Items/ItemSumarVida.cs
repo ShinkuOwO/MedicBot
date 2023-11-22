@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemSumarVida : MonoBehaviour
 {
     public int cantidadSumaVida = 20; // Cantidad de vida que suma
+    [SerializeField] private AudioClip Vida;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -12,13 +13,14 @@ public class ItemSumarVida : MonoBehaviour
         {
             ControladorDeVida controladorDeVida = other.GetComponent<ControladorDeVida>();
 
-            if (controladorDeVida != null)
+            if (controladorDeVida != null && !controladorDeVida.TieneTodaLaVida())
             {
                 controladorDeVida.AumentarVida(cantidadSumaVida);
-            }
+                Sonidos.Instance.EjecutarSonido(Vida);
 
-            // Destruye el ítem después de recogerlo
-            Destroy(gameObject);
+                // Destruye el ítem después de recogerlo
+                Destroy(gameObject);
+            }
         }
     }
 }

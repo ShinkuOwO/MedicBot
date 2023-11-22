@@ -25,6 +25,9 @@ public class DisparoMovimiento : MonoBehaviour
     public Transform puntoInicioRaycast;
     public float longitudRaycast = 0.1f;
     public LayerMask capasDeSuelo;
+    public AudioClip Disparo;
+    public AudioClip Saltar;
+    private AudioSource Audio;
 
     private bool enSuelo;
 
@@ -41,7 +44,8 @@ public class DisparoMovimiento : MonoBehaviour
         cartuchos = cartuchosIniciales;
         ActualizarTextoUI();
         An = GetComponent<Animator>();
-        
+        Audio = GetComponent<AudioSource>();
+
     }
     public bool puedesaltar()
     {
@@ -90,6 +94,9 @@ public class DisparoMovimiento : MonoBehaviour
         if (enSuelo && Input.GetKeyDown(KeyCode.Space))
         {
             Salto();
+            Audio.PlayOneShot(Saltar);
+            BajarVolumen(0.1f);
+
         }
         if (Input.GetKeyDown(KeyCode.R) && !recargando && cartuchos > 0 && balasEnCartucho < capacidadCartucho)
         {
@@ -125,6 +132,8 @@ public class DisparoMovimiento : MonoBehaviour
         {
             rbBullet.velocity = -firePoint.right * bulletSpeed;
         }
+        Audio.PlayOneShot(Disparo);
+
     }
     public void Salto()
     {
@@ -134,7 +143,6 @@ public class DisparoMovimiento : MonoBehaviour
     {
         textoUIBalas.text = $" {balasEnCartucho}";
         textoUICartucho.text = $"{cartuchos}";
-
         if (cartuchos == 0)
         {
             textoUISinBalas.text = "Te has quedado sin cartuchos.";
@@ -167,6 +175,14 @@ public class DisparoMovimiento : MonoBehaviour
         cartuchos += cantidad;
         ActualizarTextoUI();
     }
- 
+    void BajarVolumen(float nuevoVolumen)
+    {
+        // Asegúrate de que el nuevo volumen esté en el rango [0, 1]
+        nuevoVolumen = Mathf.Clamp01(nuevoVolumen);
+
+        // Establece el nuevo volumen
+       Audio.volume = nuevoVolumen;
+    }
+
 
 }
