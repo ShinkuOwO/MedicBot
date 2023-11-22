@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cantidadPuntos: 10
   puntaje: {fileID: 0}
+  Hoja: {fileID: 8300000, guid: 0b22ecd62fe3ea84aa09b3134063ab27, type: 3}
 --- !u!58 &2425968800854225312
 CircleCollider2D:
   m_ObjectHideFlags: 0

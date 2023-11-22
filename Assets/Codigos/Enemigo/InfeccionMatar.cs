@@ -7,6 +7,7 @@ public class InfeccionMatar : MonoBehaviour
     public int maxHealth = 100; // Vida máxima del enemigo
     private int currentHealth;   // Vida actual del enemigo
     private Controlador gameController;  // Referencia al GameController
+    [SerializeField] private AudioClip Infeccion;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class InfeccionMatar : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            Sonidos.Instance.EjecutarSonido(Infeccion);
             Die(); // Si la vida llega a 0 o menos, el enemigo muere
             gameController.EnemyKilled();
         }
