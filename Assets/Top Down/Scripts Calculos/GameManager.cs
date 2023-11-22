@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public Text puntajeTexto;
     private int puntaje = 0;
+    public GameObject Compuerta;
+    public GameObject Spawn;
 
     void Awake()
     {
@@ -41,6 +43,18 @@ public class GameManager : MonoBehaviour
         {
             puntajeTexto.text = "Puntaje:" + puntaje;
         }
+    }
+
+    private void FixedUpdate()
+    {
+        if (puntaje >= 300)
+        {
+            Compuerta.gameObject.SetActive(false);
+            Spawn.gameObject.SetActive(false);
+
+        }
+        
+
     }
 }
 

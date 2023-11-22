@@ -16,6 +16,7 @@ TagManager:
   - Asteroid_L
   - Asteroid_M
   - Asteroid_S
+  - compuerta
   layers:
   - Default
   - TransparentFX

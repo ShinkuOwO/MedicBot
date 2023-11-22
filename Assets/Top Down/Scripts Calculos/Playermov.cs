@@ -5,10 +5,10 @@ using UnityEngine;
 public class Playermov : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float acceleration;
-    public float maxSpeed;
-    public float inertia;
-    public float angularSpeed;
+   // public float acceleration;
+    //public float maxSpeed;
+    //public float inertia;
+    //public float angularSpeed;
     public float shootRate = 0.5f;
     public GameObject bulletPrefab;
     public Transform bulletSpawner;
@@ -21,7 +21,7 @@ public class Playermov : MonoBehaviour
     private void Start () 
     {
         rb = GetComponent<Rigidbody2D> ();
-        rb.drag = inertia;
+        //rb.drag = inertia;
     }
 
     private void Update () 
@@ -30,7 +30,7 @@ public class Playermov : MonoBehaviour
         horizontal = InputManager.Horizontal;
         shooting = Input.GetButtonDown("Fire1");
 
-        Rotate ();
+       // Rotate ();
         Shoot ();
     }
 
@@ -42,7 +42,7 @@ public class Playermov : MonoBehaviour
         }
     }
 
-    private void Rotate () 
+   /* private void Rotate () 
     {
         if (horizontal == 0) 
         {
@@ -61,7 +61,7 @@ public class Playermov : MonoBehaviour
         {
             rb.velocity = rb.velocity.normalized * maxSpeed;
         }
-    }
+    }*/
 
     public void Lose () 
     {
