@@ -50,7 +50,7 @@ public class MecanicaDeLlaveyPuerta : MonoBehaviour
             animacionPuertaAnimator.SetTrigger("AbrirPuerta");
             // Puedes agregar un evento de animación para llamar a un método específico cuando la animación de apertura termine.
             // Por ejemplo, puedes agregar un evento llamado "OnPuertaAbierta" en la animación de la puerta.
-
+      
         }
         yield return new WaitForSeconds(1f); // Espera 2 segundos adicionales
 
