@@ -17,6 +17,10 @@ public class ConstantMovement : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+        if (collision.gameObject.CompareTag("fondo"))
+        {
+            Destroy(gameObject);
+        }
         
     }
 

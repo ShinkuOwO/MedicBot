@@ -16,15 +16,7 @@ public class Spawner : MonoBehaviour
     }
     IEnumerator SpawnearAsteroides()
     {
-        /*while (true) {
-            Instantiate (
-                prefabs[Random.Range (0, prefabs.Length)],
-                spawners[Random.Range (0, spawners.Length)].position,Quaternion.identity);
-
-            yield return new WaitForSeconds (timeToSpawn);
-
-        }*/
-
+        
         for (int i = 0; i < cantidadDeSpawneo; i++)
         {
             // Instancia el objeto

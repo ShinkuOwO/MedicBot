@@ -1,59 +1,96 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Globalization;
 using UnityEngine;
-using UnityEngine.UI;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
-    public Text puntajeTexto;
-    private int puntaje = 0;
-    public GameObject Compuerta;
-    public GameObject Spawn;
+    public static GameManager Instance { get; private set; }
 
-    void Awake()
+    public HUD hud;
+    public int PuntosTotales { get; private set; }
+
+    private int vidas = 3;
+
+    public GameObject[] CompuertaAnim;
+    public GameObject[] Zona;
+    //public GameObject[] Vida;
+
+    private Animator[] animators;
+
+    private void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
         }
-        else if (instance != this)
+        else
         {
-            Destroy(gameObject);
+            Debug.Log("¡Cuidado! Más de un GameManager en escena.");
         }
     }
 
-    void Start()
+    private void Start()
     {
-        ActualizarPuntajeTexto();
-    }
+        animators = new Animator[CompuertaAnim.Length];
 
-    public void SumarPuntaje(int cantidad)
-    {
-        puntaje += cantidad;
-        ActualizarPuntajeTexto();
-
-        Debug.Log("Puntaje actualizado. Puntaje actual: " + puntaje);
-    }
-
-    void ActualizarPuntajeTexto()
-    {
-        if (puntajeTexto != null)
+        for (int i = 0; i < CompuertaAnim.Length; i++)
         {
-            puntajeTexto.text = "Puntaje:" + puntaje;
+            animators[i] = CompuertaAnim[i].GetComponent<Animator>();
         }
+    }
+
+    public void SumarPuntos(int puntosASumar)
+    {
+        PuntosTotales += puntosASumar;
+        hud.ActualizarPuntos(PuntosTotales);
+    }
+
+    public void PerderVida()
+    {
+        vidas--;
+
+        if (vidas == 0)
+        {
+            // Reiniciamos el nivel.
+            SceneManager.LoadScene(0);
+        }
+
+        hud.DesactivarVida(vidas);
+    }
+
+    public bool RecuperarVida()
+    {
+        if (vidas == 3)
+        {
+            return false;
+        }
+
+        hud.ActivarVida(vidas);
+        vidas++;
+        return true;
     }
 
     private void FixedUpdate()
     {
-        if (puntaje >= 300)
+        for (int i = 0; i < CompuertaAnim.Length; i++)
         {
-            Compuerta.gameObject.SetActive(false);
-            Spawn.gameObject.SetActive(false);
-
+            if (PuntosTotales >= 30 * (i + 1))
+            {
+                StartCoroutine(EjecutarAnimacion(i));
+            }
         }
-        
+    }
+    IEnumerator EjecutarAnimacion(int index)
+    {
+        // Configurar la animación "abriendo"
+        animators[index].SetBool("abriendo", true);
+
+        // Esperar un tiempo antes de realizar otras acciones
+        yield return new WaitForSeconds(2.0f); // Ajusta el tiempo según sea necesario
+
+        // Desactivar los objetos según sea necesario
+        CompuertaAnim[index].SetActive(false);
+        Zona[index].SetActive(false);
 
     }
 }

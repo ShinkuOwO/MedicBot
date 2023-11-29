@@ -27,15 +27,6 @@ public class Asteroid : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D col)
     {
        
-        if (col.CompareTag("Player"))
-        {
-            var asteroids = FindObjectsOfType<Asteroid>();
-            for (var i = 0; i < asteroids.Length; i++)
-            {
-                Destroy(asteroids[i].gameObject);
-            }
-            col.GetComponent<Playermov>().Lose();
-        }
         if (col.CompareTag("Bala"))
         {
             Destroy(gameObject);
@@ -47,5 +38,13 @@ public class Asteroid : MonoBehaviour {
                             Quaternion.identity);
             }
         }
+    }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            GameManager.Instance.PerderVida();
+        }
+        
     }
 }

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1868608663353995359}
   - component: {fileID: 1868608663353995358}
   - component: {fileID: 1868608663353995355}
-  - component: {fileID: 1475493615}
   - component: {fileID: 37028358580248767}
   - component: {fileID: 1475493616}
   - component: {fileID: 4860035469397001667}
@@ -110,23 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1475493615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868608663353995349}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af02b4a74eb2e4845a4329775b512065, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  borders:
-    superiorBorder: 15
-    inferiorBorder: -15
-    leftBorder: -24
-    rightBorder: 24
 --- !u!114 &37028358580248767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eedc82b2bdd37e438164b4502b07911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntajePorDestruccion: 7
+  valor: 1
 --- !u!114 &1475493616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,10 +134,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f3886556e7d894f9d5f537e9902fd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 13
   subAsteroids:
   - {fileID: 7328390555483692984, guid: de05cef00f3f5334db794cb695e0f117, type: 3}
-  numberOfAsteroids: 3
+  numberOfAsteroids: 2
 --- !u!70 &4860035469397001667
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

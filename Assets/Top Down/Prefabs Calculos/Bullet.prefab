@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8700802686124413127}
   - component: {fileID: 7610954472365169591}
-  - component: {fileID: 1232541610342767911}
   - component: {fileID: 3758391805815533952}
   - component: {fileID: 554109612}
+  - component: {fileID: 8991910611401115900}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bala
@@ -134,32 +134,6 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!61 &1232541610342767911
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7815522564734272475}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.19468218, y: 0.08169192}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 40, y: 2.5}
-    newSize: {x: 40, y: 2.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7424017, y: 1.7573324}
-  m_EdgeRadius: 0
 --- !u!212 &3758391805815533952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -201,12 +175,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 16f345bbc70316845862505a4f8f9d63, type: 3}
+  m_Sprite: {fileID: -1997168799, guid: 16f345bbc70316845862505a4f8f9d63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 40, y: 2.5}
+  m_Size: {x: 1.07, y: 1.94}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -225,3 +199,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+--- !u!70 &8991910611401115900
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7815522564734272475}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000017881393, y: 0.40807575}
+  m_Size: {x: 0.76269627, y: 1.1017128}
+  m_Direction: 0
