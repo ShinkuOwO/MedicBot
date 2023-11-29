@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 2cbe31e980179db40bcfa8e6a8e1e471
   - enabled: 1
+    path: Assets/Scenes/VideoPulmon.unity
+    guid: e3166532faab3c94a9c678ec954fdc32
+  - enabled: 1
     path: Assets/Scenes/Pulmon ej.unity
     guid: bfa358c5571adfb46af88787c7939d87
   - enabled: 1
