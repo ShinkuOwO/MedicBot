@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
         if (vidas == 0)
         {
             // Reiniciamos el nivel.
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(5);
         }
 
         hud.DesactivarVida(vidas);
