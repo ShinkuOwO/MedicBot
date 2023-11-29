@@ -47,7 +47,7 @@ public class Controlador : MonoBehaviour
             victoryPanel.SetActive(true);
 
             // Cambia el texto del panel
-            victoryText.text = "¡Has vencido al virus Bronquitis!";
+            victoryText.text = "!Has vencido al virus Bronquitis!";
 
             // Activa el TextMeshPro adicional con el mensaje "Presiona Enter para pasar al siguiente nivel"
             additionalText.gameObject.SetActive(true);
@@ -55,7 +55,7 @@ public class Controlador : MonoBehaviour
 
             // Activa el nuevo TextMeshPro con el mensaje "Eres un héroe"
             heroText.gameObject.SetActive(true);
-            heroText.text = "RECOMENDACION: Cúbrete la boca y la nariz al toser o estornudar. Cuando tosas o estornudes, cúbrete la boca y la nariz con un pañuelo de papel. Si no tienes un pañuelo, cúbrete la boca y la nariz con el antebrazo. Esto ayudará a prevenir que los gérmenes se propaguen a los demás.";
+            heroText.text = "Cubrete la boca y la nariz al toser o estornudar. Cuando tosas o estornudes, cubrete la boca y la nariz con un panuelo de papel. Si no tienes un panuelo, cubrete la boca y la nariz con el antebrazo. Esto ayudara a prevenir que los germenes se propaguen a los demas.";
 
             isGameOver = true;
         }
