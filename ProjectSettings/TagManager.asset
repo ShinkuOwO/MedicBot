@@ -18,6 +18,9 @@ TagManager:
   - Asteroid_S
   - compuerta
   - fondo
+  - Puerta
+  - Llave
+  - Pared
   layers:
   - Default
   - TransparentFX
