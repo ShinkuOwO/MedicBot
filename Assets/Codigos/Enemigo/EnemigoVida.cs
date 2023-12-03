@@ -8,7 +8,7 @@ public class EnemigoVida : MonoBehaviour
     public int maxHealth = 100; // Vida máxima del enemigo
     private int currentHealth;   // Vida actual del enemigo
     [SerializeField] private SistemaDePuntaje puntaje;
-    
+
 
     private void Start()
     {
@@ -21,8 +21,8 @@ public class EnemigoVida : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            
-           
+
+
             puntaje.SumarPuntos(cantidadPuntos);
             Die(); // Si la vida llega a 0 o menos, el enemigo muere
         }
@@ -30,7 +30,7 @@ public class EnemigoVida : MonoBehaviour
 
     void Die()
     {
-        
+
         // Aquí puedes agregar cualquier acción que deseas que ocurra cuando el enemigo muere, como destruir el objeto enemigo.
         Destroy(gameObject);
     }

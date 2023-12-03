@@ -8,40 +8,46 @@ using UnityEngine.UI;
 public class Controlador : MonoBehaviour
 {
     public int enemiesToKill = 10;
-    private int enemiesKilled = 0;
+    private int enemiesRemaining;
     public GameObject victoryPanel;
     public TextMeshProUGUI victoryText;
     public TextMeshProUGUI additionalText;
     public TextMeshProUGUI heroText;
+    public TextMeshProUGUI enemiesRemainingText;
+
     private bool isGameOver = false;
 
     private void Start()
     {
-        // Desactiva el panel, el TextMeshPro adicional y el nuevo mensaje al inicio del juego
+        // Activa el TextMeshPro de enemigos restantes al inicio del juego
+        enemiesRemainingText.gameObject.SetActive(true);
+
+        // Desactiva el panel, el TextMeshPro adicional, el nuevo mensaje al inicio del juego
         victoryPanel.SetActive(false);
         additionalText.gameObject.SetActive(false);
         heroText.gameObject.SetActive(false);
+
+        // Inicializa la cantidad restante de enemigos al comienzo del juego
+        enemiesRemaining = enemiesToKill;
+
+        // Actualiza el TextMeshPro de enemigos restantes
+        UpdateEnemiesRemainingText();
     }
 
-    private void Update()
+    private void UpdateEnemiesRemainingText()
     {
-        if (isGameOver && Input.GetKeyDown(KeyCode.Return))
-        {
-            // Código para pasar al siguiente nivel o realizar alguna acción al presionar Enter
-            // Por ejemplo, puedes cargar una nueva escena aquí.
-            SceneManager.LoadScene("Calculos");
-        }
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
-        {
-            RestartGame();
-        }
+        // Actualiza el TextMeshPro de enemigos restantes
+        enemiesRemainingText.text = "" + enemiesRemaining;
     }
 
     public void EnemyKilled()
     {
-        enemiesKilled++;
+        enemiesRemaining--;
 
-        if (enemiesKilled >= enemiesToKill)
+        // Actualiza el TextMeshPro de enemigos restantes
+        UpdateEnemiesRemainingText();
+
+        if (enemiesRemaining <= 0)
         {
             // Muestra el panel de victoria
             victoryPanel.SetActive(true);
@@ -55,7 +61,7 @@ public class Controlador : MonoBehaviour
 
             // Activa el nuevo TextMeshPro con el mensaje "Eres un héroe"
             heroText.gameObject.SetActive(true);
-            heroText.text = "Cubrete la boca y la nariz al toser o estornudar. Cuando tosas o estornudes, cubrete la boca y la nariz con un panuelo de papel. Si no tienes un panuelo, cubrete la boca y la nariz con el antebrazo. Esto ayudara a prevenir que los germenes se propaguen a los demas.";
+            heroText.text = "Cubrete la boca y la nariz al toser o estornudar. Cuando tosas o estornudes, cubrete la boca y la nariz con un pañuelo de papel. Si no tienes un pañuelo, cubrete la boca y la nariz con el antebrazo. Esto ayudará a prevenir que los gérmenes se propaguen a los demás.";
 
             isGameOver = true;
         }

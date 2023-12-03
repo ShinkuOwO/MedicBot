@@ -367,7 +367,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688234665}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9d0eaff8132f6c949ad6387bceb3387d, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: ee0e29ad5e831024f8d56f53628fbe6a, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 379691833}
@@ -439,9 +439,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acbb6d43a84fb3438cb7359e58e6a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutosParaCambio: 2
-  segundosParaCambio: 56
+  minutosParaCambio: 3
+  segundosParaCambio: 0
   nombreDeLaSiguienteEscena: Pulmon ej
+  textoMeshPro: {fileID: 98332984}
 --- !u!4 &1139173251
 Transform:
   m_ObjectHideFlags: 0
@@ -464,7 +465,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139173249}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 489042898cccabe46b45777e995b7876, type: 3}
   m_Name: 

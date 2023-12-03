@@ -132,7 +132,7 @@ public class DisparoMovimiento : MonoBehaviour
         {
             rbBullet.velocity = -firePoint.right * bulletSpeed;
         }
-        Audio.PlayOneShot(Disparo);
+        Audio.PlayOneShot(Disparo,1.0f);
 
     }
     public void Salto()
