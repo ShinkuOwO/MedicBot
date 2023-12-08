@@ -13,6 +13,7 @@ public class Controlador : MonoBehaviour
     public TextMeshProUGUI victoryText;
     public TextMeshProUGUI additionalText;
     public TextMeshProUGUI heroText;
+    public TextMeshProUGUI enemiesToKillText; // Nuevo campo para el indicador de enemigos a matar
     private bool isGameOver = false;
 
     private void Start()
@@ -21,6 +22,9 @@ public class Controlador : MonoBehaviour
         victoryPanel.SetActive(false);
         additionalText.gameObject.SetActive(false);
         heroText.gameObject.SetActive(false);
+
+        // Configura el indicador de enemigos a matar
+        UpdateEnemiesToKillText();
     }
 
     private void Update()
@@ -55,15 +59,24 @@ public class Controlador : MonoBehaviour
 
             // Activa el nuevo TextMeshPro con el mensaje "Eres un héroe"
             heroText.gameObject.SetActive(true);
-            heroText.text = "Cubrete la boca y la nariz al toser o estornudar. Cuando tosas o estornudes, cubrete la boca y la nariz con un panuelo de papel. Si no tienes un panuelo, cubrete la boca y la nariz con el antebrazo. Esto ayudara a prevenir que los germenes se propaguen a los demas.";
+            heroText.text = "Cubrete la boca y la nariz al toser o estornudar. Cuando tosas o estornudes, cubrete la boca y la nariz con un panuelo de papel. Si no tienes un panuelo, cubrete la boca y la nariz con el antebrazo. Esto ayudará a prevenir que los germenes se propaguen a los demás.";
 
             isGameOver = true;
         }
+
+        // Actualiza el indicador de enemigos a matar
+        UpdateEnemiesToKillText();
     }
 
     void RestartGame()
     {
         // Reinicia la escena actual
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    // Función para actualizar el texto del indicador de enemigos a matar
+    void UpdateEnemiesToKillText()
+    {
+        enemiesToKillText.text = "" + (enemiesToKill - enemiesKilled).ToString();
     }
 }
