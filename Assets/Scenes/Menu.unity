@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96242f3b49ed274699d7cf43bbdcc09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreDeLaEscena: Calculos
+  nombreDeLaEscena: VideoCalculos
 --- !u!1 &1399192290
 GameObject:
   m_ObjectHideFlags: 0
