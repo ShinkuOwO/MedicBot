@@ -22,7 +22,7 @@ public class BotonPausa : MonoBehaviour
         boton.onClick.AddListener(ToggleDialogo);
         botonConfirmar.onClick.AddListener(SalirJuego);
         botonCancelar.onClick.AddListener(OcultarDialogo);
-        textoConfirmacion.text = "¿Deseas salir del juego?";
+        textoConfirmacion.text = "Deseas salir del juego?";
     }
 
     private void Update()
