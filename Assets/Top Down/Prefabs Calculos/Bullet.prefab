@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3758391805815533952}
   - component: {fileID: 554109612}
   - component: {fileID: 8991910611401115900}
+  - component: {fileID: -1401775568968407569}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bala
@@ -215,3 +216,24 @@ CapsuleCollider2D:
   m_Offset: {x: -0.00000017881393, y: 0.40807575}
   m_Size: {x: 0.76269627, y: 1.1017128}
   m_Direction: 0
+--- !u!50 &-1401775568968407569
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7815522564734272475}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

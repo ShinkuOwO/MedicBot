@@ -21,6 +21,7 @@ TagManager:
   - Puerta
   - Llave
   - Pared
+  - Colider2
   layers:
   - Default
   - TransparentFX
@@ -28,9 +29,9 @@ TagManager:
   - Piso
   - Water
   - UI
-  - 
-  - 
-  - 
+  - colision
+  - Enemy
+  - Player
   - 
   - 
   - 

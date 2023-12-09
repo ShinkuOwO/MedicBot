@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7328390555483692990}
   - component: {fileID: 7328390555483692989}
+  - component: {fileID: 8331581298715330679}
   - component: {fileID: 7328390555483692986}
   - component: {fileID: 2949662951282440178}
   - component: {fileID: 1683453925}
-  - component: {fileID: 8331581298715330679}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: asteroid_S
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -88,6 +88,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &8331581298715330679
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7328390555483692984}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08351517, y: -0.0028797984}
+  m_Size: {x: 1.4753647, y: 1.6868886}
+  m_Direction: 0
 --- !u!50 &7328390555483692986
 Rigidbody2D:
   serializedVersion: 4
@@ -137,19 +153,3 @@ MonoBehaviour:
   speed: 15
   subAsteroids: []
   numberOfAsteroids: 0
---- !u!70 &8331581298715330679
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7328390555483692984}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.08351517, y: -0.0028797984}
-  m_Size: {x: 1.4753647, y: 1.6868886}
-  m_Direction: 0

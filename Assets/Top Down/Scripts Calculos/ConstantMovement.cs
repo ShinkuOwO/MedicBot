@@ -3,25 +3,28 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ConstantMovement : MonoBehaviour {
+public class ConstantMovement : MonoBehaviour
+{
     public float speed;
 
-    void Update () 
+    void Update()
     {
         transform.position += transform.up * speed * Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            Destroy(gameObject);
-        }
+        // Verifica si la colisión es con un objeto con la etiqueta "Pared"
         if (collision.gameObject.CompareTag("fondo"))
         {
+            // Destruye la bala al impactar con la pared
             Destroy(gameObject);
         }
-        
-    }
+        if (collision.gameObject.CompareTag("compuerta"))
+        {
+            // Destruye la bala al impactar con la pared
+            Destroy(gameObject);
+        }
 
+    }
 }
