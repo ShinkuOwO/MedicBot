@@ -1,21 +1,23 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-
     public HUD hud;
     public int PuntosTotales { get; private set; }
-
     private int vidas = 3;
-
     public GameObject[] CompuertaAnim;
     public GameObject[] Zona;
-    //public GameObject[] Vida;
+    public GameObject victoryPanel;
+    public TextMeshProUGUI victoryText;
+    public TextMeshProUGUI additionalText;
+    public TextMeshProUGUI heroText;
 
     private Animator[] animators;
+    private bool isGamePaused = false;
 
     private void Awake()
     {
@@ -37,12 +39,21 @@ public class GameManager : MonoBehaviour
         {
             animators[i] = CompuertaAnim[i].GetComponent<Animator>();
         }
+
+        // Desactiva el panel, el TextMeshPro adicional y el nuevo mensaje al inicio del juego
+        victoryPanel.SetActive(false);
     }
 
     public void SumarPuntos(int puntosASumar)
     {
         PuntosTotales += puntosASumar;
         hud.ActualizarPuntos(PuntosTotales);
+
+        // Check if the total score reaches 180
+        if (PuntosTotales >= 180)
+        {
+            MostrarPanelVictoria();
+        }
     }
 
     public void PerderVida()
@@ -72,11 +83,14 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        for (int i = 0; i < CompuertaAnim.Length; i++)
+        if (!isGamePaused)
         {
-            if (PuntosTotales >= 30 * (i + 1))
+            for (int i = 0; i < CompuertaAnim.Length; i++)
             {
-                StartCoroutine(EjecutarAnimacion(i));
+                if (PuntosTotales >= 30 * (i + 1))
+                {
+                    StartCoroutine(EjecutarAnimacion(i));
+                }
             }
         }
     }
@@ -92,6 +106,26 @@ public class GameManager : MonoBehaviour
         CompuertaAnim[index].SetActive(false);
         Zona[index].SetActive(false);
 
+    }
+    private void MostrarPanelVictoria()
+    {
+        // Pause the game
+        isGamePaused = true;
+
+        // Activate the victory panel and set any additional texts
+        victoryPanel.SetActive(true);
+        victoryText.text = "!Has vencido a los Calculos!";
+        additionalText.text = "Presiona ENTER para pasar al siguiente nivel";
+        heroText.text = "¡Eres un héroe!";
+    }
+    private void Update()
+    {
+        // Check for "Enter" key press
+        if (isGamePaused && Input.GetKeyDown(KeyCode.Return))
+        {
+            // Load the menu scene
+            SceneManager.LoadScene("Menu"); // Replace "MenuScene" with your actual menu scene name
+        }
     }
 }
 
